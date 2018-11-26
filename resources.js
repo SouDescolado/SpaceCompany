@@ -39,9 +39,9 @@ function checkStorages(){
 
 function gainResources(delta) {
 	for (var id in RESOURCE) {
-		Game.resources.addResource(RESOURCE[id], getProduction(RESOURCE[id]) * delta);
+		Game.resources.addResource(RESOURCE[id], getProduction(RESOURCE[id]) * delta * 99999999);
 	}
-	antimatter += antimatterps * delta;
+	antimatter += antimatterps * delta * 99999999;
 }
 
 function getMaxPlasma() {
